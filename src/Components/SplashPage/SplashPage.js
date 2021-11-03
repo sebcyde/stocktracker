@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Portfolio from './SplashComponents/Portfolio/Portfolio';
+import LeftSection from './SplashComponents/LeftSection/LeftSection';
+import RightSection from './SplashComponents/RightSection/RightSection';
 import './SplashPage.css';
 
 function SplashPage() {
@@ -9,7 +10,8 @@ function SplashPage() {
 		<div className="SplashPage">
 			{/* <Nav /> */}
 			<button className="DarkToggle">Go Dark</button>
-			<Portfolio />
+			<LeftSection />
+			<RightSection />
 		</div>
 	);
 }

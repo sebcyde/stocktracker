@@ -2,16 +2,21 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 function Portfolio() {
-	const Portfolio = [];
+	const PortfolioList = [];
 	const [SearchTerm, setSearchTerm] = useState('');
 
-	function SearchTickers(e) {
-		e.preventDefault();
+	function SearchTickers(event) {
+		event.preventDefault();
 		console.log(SearchTerm);
 		axios
 			.get(`https://api.coingecko.com/api/v3/coins/${SearchTerm}`)
 			.then((response) => {
 				console.log(response.data);
+				return (
+					<div className="Response">
+						<h1>{Response.data.name}</h1>
+					</div>
+				);
 			})
 			.catch((error) => {
 				console.error(error);
