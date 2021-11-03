@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Portfolio from './SplashComponents/Portfolio/Portfolio';
 import './SplashPage.css';
 
 function SplashPage() {
@@ -6,7 +7,7 @@ function SplashPage() {
 
 	return (
 		<div className="SplashPage">
-			<Nav />
+			{/* <Nav /> */}
 			<button className="DarkToggle">Go Dark</button>
 			<Portfolio />
 		</div>
